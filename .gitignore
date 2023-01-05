@@ -131,3 +131,9 @@ dmypy.json
 # add django PostgreSQL
 .pg_service.conf
 .my_pgpass
+
+# add ngix uWSGI
+graph_config_nginx.conf
+graph_config_uwsgi.ini
+uwsgi_params
+
