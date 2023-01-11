@@ -22,3 +22,7 @@ apiの無料枠は50万ドル以上の移動量に絞られているため、大
 * Certbot（SSL認証書を発行）
 
 ドメインはお名前.comで取得したため、「Route 53」は使用しませんでした。
+
+## 参考にしたサイト
+[Django+Nginx+uWSGI+EC2+PostgreSQLのWebアプリ作成まとめ](https://sushiringblog.com/django-nginx-uwsgi)の記事にまとめました。
+皆さまありがとうございました！
