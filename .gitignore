@@ -140,3 +140,6 @@ uwsgi_params
 # add start.sh
 start.sh
 
+# add venv
+venv2
+
