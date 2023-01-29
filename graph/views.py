@@ -24,13 +24,14 @@ class Index(TemplateView):
     def get_context_data(self, **kwargs):
 
         # qs = models.Whale.objects.all()
-        qs = models.Whale.objects.order_by('timestamp')
         #print(qs)
-        x  = [x.timestamp for x in qs]
-        y  = [y.amount for y in qs]
-        z  = [z.price for z in qs]
-        judge = 'sum'
-        sum_graph = graph.Plot_Graph(x,y,z,judge)
+
+        # qs = models.Whale.objects.order_by('timestamp')
+        # x  = [x.timestamp for x in qs]
+        # y  = [y.amount for y in qs]
+        # z  = [z.price for z in qs]
+        # judge = 'sum'
+        # sum_graph = graph.Plot_Graph(x,y,z,judge)
 
         qs = models.Whale.objects.order_by('timestamp').filter(move='buy')
         x  = [x.timestamp for x in qs]
