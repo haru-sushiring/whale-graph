@@ -4,8 +4,16 @@
 
 apiの無料枠は50万ドル以上の移動量に絞られているため、大口投資家の動きが丸わかりです。今は取引所にお金が流れているのか、個人のウォレットに流れているのかがひと目で分かります。ぜひ利用して儲けちゃってください笑
 
+## 動かし方
+1. Pythonの仮想環境をつくる（venv）
+2. pip install -r requirements.txt
+3. 「.env」ファイルを作成する
+4. config＞settings.pyの修正（SECRET_KEY、ALLOWED_HOSTS、DATABASES）
+5. settings.pyの情報、PostgreSQLの情報（USER、PASSWORD、HOST、PORT、DATABASE）、最新のタイムスタンプTIMESTAMPを「.env」に書いておきます。
+6. python manage.py runserver　で動くと思います。。。
+
 ## URL
-[whale_api_analysis](https://whale-analytics.com/)
+[https://whale-analytics.com/](https://whale-analytics.com/)
 
 ## グラフ化するメリット
 * 分析しやすくなる
